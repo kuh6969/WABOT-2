@@ -997,7 +997,7 @@ if (args.length < 2) return reply(`Penggunaan ${command} idgroup`)
                await sleep(1000)
                txtt =`Hai Kak ${pushname}\nItu Ownerku, Mau tau soal apa ya?`
 
-               buttons = [{buttonId: '!sourcecode',buttonText:{displayText:'🔖SC BOT'},type:1},{buttonId:'!infoig',buttonText:{displayText:'🉐INSTAGRAM'},type:1},{buttonId:'!sewa',buttonText:{displayText:'👑SEWA BOT'},type:1}]
+               buttons = [{buttonId: '!sourcecode',buttonText:{displayText:'SC BOT'},type:1},{buttonId:'!infoig',buttonText:{displayText:'INSTAGRAM'},type:1},{buttonId:'!topup',buttonText:{displayText:'TOPUP GAME'},type:1}]
 
                buttonsMessage = {
                contentText: `${txtt}`,
@@ -1190,91 +1190,13 @@ ${ucapanWaktu} Kak ${pushname} 🐣👋
 │• *࿊⃟🐣* 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : *${os.platform()}*
 ╰──────────────
 
-✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
-『 𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔 』
-
-*࿊⃟🦖️* _*${prefix}GROUPMENU*_
-*࿊⃟🦖* _*${prefix}WIBUMENU*_
-*࿊⃟🦖* _*${prefix}STICKERMENU*_
-*࿊⃟🦖* _*${prefix}OWNERMENU*_
-*࿊⃟🦖* _*${prefix}GAMEMENU*_
-*࿊⃟🦖* _*${prefix}MENUMAKER*_
-*࿊⃟🦖* _*${prefix}FUNMENU*_
-*࿊⃟🦖* _*${prefix}DOWNLOADMENU*_
-*࿊⃟🦖* _*${prefix}INFOMENU*_
-*࿊⃟🦖* _*${prefix}OTHERMENU*_
-*࿊⃟🦖* _*${prefix}SEWABOT*_
-*࿊⃟🦖* _*${prefix}18+*_
-*࿊⃟🦖* _*${prefix}ISLAMMENU*_
-*࿊⃟🦖* _*${prefix}RANDOMTEKS*_
-*࿊⃟🦖* _*${prefix}MOVIEMENU*_
-*࿊⃟🦖* _*${prefix}RANDOMIMAGE*_
-*࿊⃟🦖* _*${prefix}EPHOTO*_
-*࿊⃟🦖* _*${prefix}PHOTOKY*_
-*࿊⃟🦖* _*${prefix}TEXTPRO*_
-*࿊⃟🦖* _*${prefix}IMAGEMANI*_
-*࿊⃟🦖* _*${prefix}NSFWMENU*_
-
 『 ${botName} 』
-
-✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
-
- ׄ✑⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-
-Made With ❤️ Kukuh
-
-ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-*Bot Error?* Langsung Lapor
-*${prefix}bugreport* (Masalah)
 `
 
-              
-                setTimeout( () => {
-			ikyy.updatePresence(from, Presence.composing)
-			reply(`
-⛾SEWA BOT
-${prefix}sewa
-JANGAN SPAM BOT ATAU ${prefix}MENU AGAR BOT TIDAK CRAS`)
-		}, 2000)
 const loli = fs.readFileSync('./assets/MENU.mp3')
 ikyy.sendMessage(from, loli, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
-                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: ' ```BOT CREATED BY HELGA``` ', buttons: [{ buttonId: `!command`, buttonText: { displayText: '𝐒𝐈𝐌𝐏𝐋𝐄 𝐌𝐄𝐍𝐔' }, type: 1 },{ buttonId: `!fitur`, buttonText: { displayText: '𝐅𝐈𝐓𝐔𝐑' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '𝐒𝐄𝐖𝐀 𝐁𝐎𝐓' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: 'OWNER 👑' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: ' ```Made With ❤️ Kukuh``` ', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'SHOW MENU' }, type: 1 },{ buttonId: `!topup`, buttonText: { displayText: 'TOPUP GAME' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: 'DEVELOPER' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: 'OWNER 👑' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
               break
-case 'f':
-case 'lock':
- ikymemek = {
-  "key": {
-    "fromMe": false,
-    participant: `6282138919347@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
-  },
-  "message": {
-    "viewOnceMessage": {
-      "message": {
-        "imageMessage": {
-          "url": "https://mmg.whatsapp.net/d/f/AjD3dQIM5hW3UkDfnnkice-eMcsMJJALEcgD9HnDGZEp.enc",
-          "mimetype": "image/jpeg",
-          "fileSha256": "aR3vWUsV9VZUiR+agYok8oM4UHiuhqEShMpQ6SgY9WM=",
-          "fileLength": "675",
-          "height": 41,
-          "width": 52,
-          "mediaKey": "6RDG8T+jOb0RfleWzLTclsaVn0EGRA/v78dnS+Y4S+o=",
-          "fileEncSha256": "idNxqNtCaHRxuN+AX0uakPrBuiyvx84IksPUYMYgs7Y=",
-          "directPath": "/v/t62.7118-24/13810909_985978368802545_7608967834334288292_n.enc?ccb=11-4&oh=359274a24041d97e91597ad1fb40e784&oe=61595B99",
-          "mediaKeyTimestamp": "1630826390",
-          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIACkANAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAApgAAAAAAAAAAAf/EABQQAQAAAAAAAAAAAAAAAAAAAFD/2gAIAQEAAT8AK//EABQRAQAAAAAAAAAAAAAAAAAAADD/2gAIAQIBAT8AT//EABQRAQAAAAAAAAAAAAAAAAAAADD/2gAIAQMBAT8AT//Z",
-          "viewOnce": true
-        }
-      }
-    }
-  },
-  "messageTimestamp": "1630826389",
-  "status": "SERVER_ACK",
-  "mediaData": {
-    "localPath": "/data/user/0/com.gbwhatsapp/files/ViewOnce/IMG-20210905-WA0047.jpg"
-  }
-}
-ikyy.sendMessage(from, { "degreesLatitude": '', "degreesLongitude": '', "jpegThumbnail": fakeimage}, MessageType.location, {quoted: ikymemek})
-           break
    case 'kalender':
               reply(`
 *࿊⃟🐣* Day ${week} ${weton} 
@@ -1339,6 +1261,9 @@ sendButMessage(from, wibu, `created 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠`, 
             type: 1,
           },]);
 break
+case 'topup':
+  textImg(`COMING SOON LAGI DI CODING`)
+  break
 case 'fitnah':
                  
 				 
@@ -2430,7 +2355,7 @@ Made With ❤️ in Indramayu,Indonesia
                contentText: `${menu}`,
                footerText:  `   
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2478,7 +2403,7 @@ Made With ❤️ in Indramayu,Indonesia
                contentText: `${menu}`,
                footerText:  `   
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2536,7 +2461,7 @@ Made With ❤️ in Indramayu,Indonesia
                contentText: `${menu}`,
                footerText:  `   
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2595,7 +2520,7 @@ Made With ❤️ in Indramayu,Indonesia
                contentText: `${menu}`,
                footerText:  `   
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2669,7 +2594,7 @@ Made With ❤️ in Indramayu,Indonesia
                footerText:  `   
 
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2746,7 +2671,7 @@ Made With ❤️ in Indramayu,Indonesia
  𝔍????𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯??𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2809,14 +2734,9 @@ Made With ❤️ in Indramayu,Indonesia
 
 
  ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
+ Made With ❤️ in Semarang,Indonesia
 
-Made With ❤️ in Indramayu,Indonesia
-
-ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-*Bot Error?* Langsung Lapor
-*${prefix}bugreport* reason
-
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2879,7 +2799,7 @@ Made With ❤️ in Indramayu,Indonesia
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   ??𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 ??𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2949,7 +2869,7 @@ Made With ❤️ in Indramayu,Indonesia
  𝔍𝔞??𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰??𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩??𝔫𝔶𝔞
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -3000,16 +2920,7 @@ Made With ❤️ in Indramayu,Indonesia
  
 
 
-===================
-
- ׄ✑⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-
-Made With ❤️ in Indramayu,Indonesia
-
-ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-*Bot Error?* Langsung Lapor
-*${prefix}bugreport* reason
-`
+Made With ❤️ in Semarang,Indonesia`
 
 
 
@@ -3024,7 +2935,7 @@ Made With ❤️ in Indramayu,Indonesia
 
  
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -3082,15 +2993,7 @@ Made With ❤️ in Indramayu,Indonesia
  
 
 
-===================
-
- ׄ✑⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-
-Made With ❤️ Indramayu,Indonesia
-
-ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-*Bot Error?* Langsung Lapor
-*${prefix}bugreport* reason
+Made With ❤️ in Semarang,Indonesia
 `
                buttons =  [
     {buttonId: `${prefix}rules`, buttonText: {displayText: 'S&K'}, type: 1},
@@ -3102,7 +3005,7 @@ Made With ❤️ Indramayu,Indonesia
                footerText:  `   
 
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -3157,15 +3060,8 @@ Made With ❤️ Indramayu,Indonesia
  
 
 
-===================
 
- ׄ✑⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡⋆ ⃝⃕⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-
-Made With ❤️ in Indramayu,Indonesia
-
-ׄ✑⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡  ⃝⃕⋆⬡⋆ ⃝⃕⋆⬡  ⃝⃕⋆⬡ ⃝⃕ׄ
-*Bot Error?* Langsung Lapor
-*${prefix}bugreport* reason `
+Made With ❤️ in Semarang,Indonesia`
 
                buttons =  [
     {buttonId: `${prefix}rules`, buttonText: {displayText: 'S&K'}, type: 1},
@@ -3178,7 +3074,7 @@ Made With ❤️ in Indramayu,Indonesia
                headerType: 1
 
   
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -3255,7 +3151,7 @@ case 'pornmenu':
               
 
   
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -3448,7 +3344,7 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command
   ${ucapanWaktu}
               
 
- 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, imageMessage: imageMsg,
+ KUHXBOT`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -3475,7 +3371,7 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command
                    }
                         list.push(yy)
            }
-               listmsg(from, `Halo Kak Silahkan Pilih Menu ${botName} Di Bawah Ya Kak!\nJangan Lupa Sewa Kak Xixi`, `  `, list)
+               listmsg(from, `Halo Kak Silahkan Pilih Menu ${botName} Di Bawah Ya Kak!`, `  `, list)
                break
    case 'izinout':
    list = []
@@ -3823,7 +3719,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
      case 't':
        titid =  `SILAHKAN PILIH DI BAWAH UNTUK MELANJUTKAN`
           
-                   sendButMessage(from, titid, `crated 𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎`, [
+                   sendButMessage(from, titid, `crated KUHXBOT`, [
           {
             buttonId: `Y`,
             buttonText: {
@@ -4420,35 +4316,9 @@ case 'sfire':
 }
               mentions(txt, men, true)
               break
-
-       case 'sewabot':
-              gopeynya = 'https://e.top4top.io/p_21336v4de1.jpg'
-            buff = await getBuffer(gopeynya)
-            teksnya = `
-┏━━⬣ 𝐏𝐫𝐢𝐜𝐞 𝐋𝐢𝐬𝐭 𝐎𝐧𝐞✨
-┃💌 : SEWA 5K/MINGGU
-┃💌 : SEWA 10K/BLN
-┃💌 : SEWA PERMANEN 25K
-┗━━⬣
-
-┏━━⬣ 𝐏𝐫𝐢𝐜𝐞 𝐋𝐢𝐬𝐭 𝐓𝐰𝐨🎋
-┃💌 : JADI BOT 15K/BLN
-┃💌 : JADI BOT + OWNER 35K
-┃💌 : BUAT BELI APIKEY!
-┗━━⬣
-
-┏━━⬣ 𝐌𝐢𝐧𝐚𝐭?𝐂𝐡𝐚𝐭♨️
-┃💌 : *SERING² DONASI✨*
-┃💌 : ==============
-┃💌 : wa.me/6282138919347
-┃💌 : ==============
-┃💌 : Instagram : _*@helga_store20*_
-┃💌 : YouTube : _*Helga Zex's*_
-┗━━⬣
-`
   buttons = [{buttonId: `${prefix}buypremium`,buttonText:{displayText: `𝐏𝐑𝐄𝐌𝐈𝐔𝐌`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `𝐏𝐀𝐘𝐌𝐄𝐍𝐓`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎ ', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'KUHXBOT ', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4482,13 +4352,13 @@ KARENA BISA MENGAKSES FITUR JOIN 😘
 
 ┏━━⬣ 𝐌𝐢𝐧𝐚𝐭?𝐂𝐡𝐚𝐭 𝐎𝐰𝐧𝐞𝐫 𝐃𝐢 𝐁𝐚𝐰𝐚𝐡♨️
 ┃💌 : wa.me/6282138919347
-┃💌 : Instagram : @helga_store20
-┃💌 : YouTube : Helga Zex's
+┃💌 : Instagram : @ramadhankukuh
+┃💌 : YouTube : Kukuh Ramadhan YT
 ┗━━⬣
 `
   buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `PAYMENT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎ ', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'KUHXBOT ', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4507,7 +4377,7 @@ KARENA BISA MENGAKSES FITUR JOIN 😘
 `
   buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `𝐎𝐖𝐍𝐄𝐑`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'KUHXBOT', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -5072,7 +4942,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${setting.lolkey}`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'KUHXBOT', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -5177,7 +5047,7 @@ break
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'𝑰𝒍𝒉𝒂𝒎 𝑩𝒐𝒕𝒛🌠︎', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'KUHXBOT', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -6016,11 +5886,6 @@ DONASI OM\n*SESUNGGUH NYA ORANG YANG MEMBERI LEBIH BAIK DARI MENERIMA ☝️*
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
               break
-       case 'keuntungan':
-       case 'keenakan':
-       case 'fitur':
-       textImg(`Keuntungan Sewa Bot\n1. Bisa AntiLink\n2. Bisa Welcome\n3. Bisa Bikin Sticker\n4. Bisa Tutup GroupChat Otomatis Pake Sticker\n5. Dan Lain Lain Ada Di Fitur Bot`)
-       break
        case 'sourcecode': 
        case 'sc': 
        case 'src':
@@ -6028,11 +5893,11 @@ DONASI OM\n*SESUNGGUH NYA ORANG YANG MEMBERI LEBIH BAIK DARI MENERIMA ☝️*
             buff = await getBuffer(gopeynya)
             teksnya = `◁━━━━◈✙◈━━━━▷
 ᎒BOT INI MENGGUNAKAN SC
-᎒https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg
-᎒Subscribe Helga Zex's
+᎒https://github.com/kuh6969/WABOT-3
+᎒Subscribe Kukuh Ramadhan YT's
 ━━━━━━━ •♬• ━━━━━━━
 `
-  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `𝐎𝐖𝐍𝐄𝐑👑`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `𝐏𝐀𝐘𝐌𝐄𝐍𝐓`},type:1}]
+  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `PAYMENT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'GAK SUBSCRIBE EROR', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
@@ -6644,7 +6509,7 @@ ikyy.sendMessage(_.jid,
 ├ *BOT TYPE* : NodeJS
 ├ *NAME*  : Helga Zex
 ├ *VERSION* : 1.0
-├ *GITHUB* : https://github.com/HelgaIlham
+├ *GITHUB* : https://github.com/ramadhankukuh
 │
 ├─『 *𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊* 』
 │
@@ -6883,7 +6748,7 @@ case 'chatrava':
              break
 //------------------< Menunya Bang:v >-------------------
       case 'infoig':
-             reply(`Jangan Lupa Follow Ig Owner Ya : https://instagram.com/helga_store20?utm_medium=copy_link`)
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://instagram.com/ramadhankukuh`)
              break
       case 'hamdeh':
              reply('Hamdeh hamdeh')

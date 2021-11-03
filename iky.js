@@ -76,7 +76,7 @@ join = '\`\`\`𝘽𝙚𝙗𝙖𝙣 𝘽𝙖𝙧𝙪\`\`\` \n \`\`\`Nama :\`\`\` 
 leave = '\`\`\`𝘽𝙮𝙚𝙚 𝘼𝙣𝙖𝙠 𝘼𝙟𝙜👋\`\`\`'
 const simple = require('./lib/simple.js')
 let fakeimage = fs.readFileSync("./media/wpmobile.png")
-let errorImg = 'https://i.ibb.co/MRr4q6w/20210820-102610.png'
+let errorImg = 'https://ibb.co/7KCLvxJ'
 let setting = JSON.parse(fs.readFileSync('./setting.json'))
 banChats = true;
 owner = setting.owner
@@ -918,7 +918,7 @@ const isVideo = (type === 'videoMessage')
 			}
 			
 			/////
-let ikyads = await getBuffer(`https://i.ibb.co/MRr4q6w/20210820-102610.png`)
+let ikyads = await getBuffer(`https://i.ibb.co/7KCLvxJ/ronove.jpg`)
 fakelink = (tekslink) => { 
 	return {"externalAdReply": { "title": tekslink, "thumbnail": ikyads, "sourceUrl": "https://wa.me/6282138919347" }}
 }
